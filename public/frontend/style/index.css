@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgba(204, 203, 203, 0.539);
+}
+
+footer {
+  background: #f2f2f2;
+}
+#userDropdown {
+  z-index: 11111111111 !important;
+}
+.big_ul {
+  scrollbar-width: none;
+}
+.topHeader {
+  background: #ff79c8;
+}
+.slick-dots li button:before {
+  font-family: slick;
+  font-size: 26px;
+  margin: 10px 0;
+  line-height: 10px;
+}
+.slick-dots li.slick-active button:before {
+  color: #4299e1; /* Tailwind blue */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #4299e1; /* Tailwind blue */
+}
+
+.products a .img_{
+  overflow: hidden;
+  transition: all 0.3 linear;
+}
+.products a .img_ img{
+  
+  transition: all 0.3s ease-in;
+}
+.products a .img_:hover img{
+  scale: 1.1;
+  transition-duration: .3s;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header stays on top */
+}
+  .header {
+    transition: background-color 0.3s ease;
+  }
+.active > *{
+  @apply text-green-500
+}
+.inactive > *{
+  @apply text-gray-500
+}
